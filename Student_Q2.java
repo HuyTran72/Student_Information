@@ -83,13 +83,14 @@ public class Student_Q2 {
         s1.CalculateGPA();
         s1.printInfo();
 
+        System.out.println();
+
         Map<String, Integer> Grades_s2 = new HashMap<>();
-        Student_Q2 s2 = new Student_Q2(2222, "Student_2", 4, Grades_s2);
-        Grades_s2.put("Math", 100);
-        Grades_s2.put("Physics", 100);
+        Grades_s2.put("Math", 96);
+        Grades_s2.put("Physics", 75);
         Grades_s2.put("Chemistry", 100);
+        Student_Q2 s2 = new Student_Q2(2222, "Student_2", 4, Grades_s2);
         s2.printInfo();
-        
     }
 }
 
