@@ -1,16 +1,16 @@
 import java.util.*;
 
-public class Student_Q2 {
+public class Student {
     private int SID;
     private String Name;
     private int Year;
     private Map<String, Integer> Grades;
     private float GPA;
 
-    public Student_Q2() {
+    public Student() {
     }
     
-    public Student_Q2(int SID, String Name, int Year, Map<String, Integer> Grades) {
+    public Student(int SID, String Name, int Year, Map<String, Integer> Grades) {
         this.SID = SID;
         this.Name = Name;
         this.Year = Year;
@@ -70,7 +70,7 @@ public class Student_Q2 {
     }
 
     public static void main(String[] args) {
-        Student_Q2 s1 = new Student_Q2();
+        Student s1 = new Student();
         s1.setSID(1111);
         s1.setName("Student_1");
         s1.setYear(3);
@@ -89,7 +89,7 @@ public class Student_Q2 {
         Grades_s2.put("Math", 96);
         Grades_s2.put("Physics", 75);
         Grades_s2.put("Chemistry", 100);
-        Student_Q2 s2 = new Student_Q2(2222, "Student_2", 4, Grades_s2);
+        Student s2 = new Student(2222, "Student_2", 4, Grades_s2);
         s2.printInfo();
     }
 }
